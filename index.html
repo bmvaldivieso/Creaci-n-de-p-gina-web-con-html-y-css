@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Plan Docente</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('./img/fondo.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 330px; 
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .login-container h1 {
+            font-size: 18px;
+            color: #004a87;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        
+        .options-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px; 
+        }
+
+        .login-container label {
+            margin: 0;
+        }
+
+        .login-container a {
+            color: #004a87;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .login-container button {
+            background-color: #004a87;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px; 
+        }
+
+        .manuals-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            position: fixed; 
+            right: 0px; 
+            bottom: 70px; 
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
+        }
+
+        .manuals-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .manuals-container li {
+            margin: 10px 0;
+        }
+
+        .manuals-container li a {
+            color: #004a87;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .manuals-container li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos del pie de página */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #ffffff;
+            color: #004a87;
+            text-align: left; 
+            padding: 20px 10px; 
+            font-size: 25px; 
+            box-sizing: border-box;
+        }
+
+        .footer .button-container {
+            position: absolute;
+            right: 20px; 
+            bottom: 10px;
+        }
+
+        .footer button {
+            background-color: #004a87;
+            color: white;
+            border: none;
+            padding: 15px 30px; 
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px; 
+        }
+
+        .footer button:hover {
+            background-color: #003366; 
+        }
+
+        .footer span {
+            font-weight: bold; 
+            font-size: 25px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="./img/logo2.png" alt="UTPL Logo"> 
+        <h1>Use usuario y clave institucional</h1>
+        <form>
+            <input type="text" placeholder="Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+
+            <div class="options-container">
+                <label>
+                    <input type="checkbox"> Acuérdate de mí
+                </label>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+            </div>
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <div class="manuals-container">
+        <ul>
+            <li><a href="#">Manual para elaboración del plan MODALIDAD PRESENCIAL</a></li>
+            <li><a href="#">Manual para elaboración del plan MODALIDAD A DISTANCIA</a></li>
+            <li><a href="#">Manual par revisor</a></li>
+            <li><a href="#">Manual equipo de calidad</a></li>
+            <li><a href="#">Manual firma electrónica de documentos</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="button-container">
+            <button>Manuales de Usuario</button>
+        </div>
+        <span>Sistema de Gestión de Plan Docente.</span>
+    </div>
+</body>
+</html>
